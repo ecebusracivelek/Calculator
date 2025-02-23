@@ -1,0 +1,236 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="356.0" minWidth="300.0" prefHeight="356.0" prefWidth="300.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculatorapplication.CalculatorController">
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" minHeight="346.0" minWidth="309.0" prefHeight="346.0" prefWidth="309.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Label fx:id="display" alignment="CENTER_RIGHT" contentDisplay="RIGHT" minHeight="79.0" minWidth="272.0" prefHeight="84.0" prefWidth="296.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="0" textAlignment="RIGHT">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="249.0" minWidth="272.0" prefHeight="266.0" prefWidth="309.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="btnPercentage" minWidth="10.0" mnemonicParsing="false" onAction="#handlePercentageAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="\%" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnClearEntry" minWidth="10.0" mnemonicParsing="false" onAction="#handleClearEntryAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="CE" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnClear" layoutX="14.0" minWidth="10.0" mnemonicParsing="false" onAction="#handleClearAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="C" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnDelete" minWidth="10.0" mnemonicParsing="false" onAction="#handleDeleteAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="DEL" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnReciprocal" minWidth="10.0" mnemonicParsing="false" onAction="#handleReciprocalAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="1/x" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSquare" minWidth="10.0" mnemonicParsing="false" onAction="#handleSquareAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="x²" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSquareRoot" minWidth="10.0" mnemonicParsing="false" onAction="#handleSquareRootAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text=" √x" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnDivision" minWidth="10.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="/" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSeven" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="7" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnEight" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnNine" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnMultiplication" minWidth="10.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="x" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnFour" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="4" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnOne" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="1" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnNegate" minWidth="10.0" mnemonicParsing="false" onAction="#handleNegateAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="+/-" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnFive" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSix" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSubtraction" minWidth="10.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnTwo" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnZero" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnThree" minWidth="10.0" mnemonicParsing="false" onAction="#handleNumberAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnAddition" minWidth="10.0" mnemonicParsing="false" onAction="#handleOperatorAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnDecimalPoint" minWidth="10.0" mnemonicParsing="false" onAction="#handleDecimalPointAction" prefHeight="36.0" prefWidth="56.0" style="-fx-background-color: #ffffff; -fx-border-color: #a9a9a9;" text="," textAlignment="CENTER" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnEqual" minWidth="10.0" mnemonicParsing="false" onAction="#handleEqualsAction" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #444444;" text="=" textAlignment="CENTER" textFill="#f4f3f3" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
